@@ -11,7 +11,7 @@ public class Program {
 
         Seller seller = sellerDao.findById(3);
 
+        System.out.println("Teste 1 -> Busca por ID");
         System.out.println(seller);
-        System.out.println("<-----------------|Teste 123 Teste|-------------------->");
     }
 }
