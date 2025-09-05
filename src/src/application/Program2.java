@@ -16,11 +16,17 @@ public class Program2 {
         Department department = departmentDao.findById(4);
         System.out.println(department);
 
+        System.out.println();
+
         System.out.println("Teste 2 -> Busca tudo (all)");
         List<Department> list = new ArrayList<>();
         list = departmentDao.findAll();
         for (Department obj : list) {
             System.out.println(obj);
         }
+        
+        System.out.println();
+
+        System.out.println("Teste 3 -> Busca tudo (all)");
     }
 }
