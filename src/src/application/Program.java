@@ -16,9 +16,8 @@ public class Program {
 
         SellerDao sellerDao = DaoFactory.createSellerDao();
 
-        Seller seller = sellerDao.findById(3);
-
         System.out.println("Teste 1 -> Busca por ID");
+        Seller seller = sellerDao.findById(3);
         System.out.println(seller);
 
         System.out.println("\nTeste 2 -> Busca por Departamento");
