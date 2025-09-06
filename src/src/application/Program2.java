@@ -24,9 +24,13 @@ public class Program2 {
         for (Department obj : list) {
             System.out.println(obj);
         }
-        
+
         System.out.println();
 
-        System.out.println("Teste 3 -> Busca tudo (all)");
+        System.out.println("Teste 3 -> Inserção de dados");
+        department = new Department(null, "Teste Insert");
+        departmentDao.insert(department);
+
+        System.out.println();
     }
 }
