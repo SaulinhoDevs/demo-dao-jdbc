@@ -32,5 +32,12 @@ public class Program2 {
         departmentDao.insert(department);
 
         System.out.println();
+
+        System.out.println("Teste 4 -> Atualização de dados");
+        Department department1 = departmentDao.findById(6);
+        department1.setName("Music");
+        departmentDao.update(department1);
+
+        System.out.println();
     }
 }
