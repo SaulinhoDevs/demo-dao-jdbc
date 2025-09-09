@@ -28,16 +28,20 @@ public class Program2 {
         System.out.println();
 
         System.out.println("Teste 3 -> Inserção de dados");
-        department = new Department(null, "Teste Insert");
+        department = new Department(null, "Business");
         departmentDao.insert(department);
 
         System.out.println();
 
         System.out.println("Teste 4 -> Atualização de dados");
-        Department department1 = departmentDao.findById(6);
-        department1.setName("Music");
-        departmentDao.update(department1);
+        department = departmentDao.findById(6);
+        department.setName("Music");
+        departmentDao.update(department);
 
         System.out.println();
+
+        System.out.println("Teste 4 -> Deleção de dados");
+        departmentDao.deleteById(10);
+
     }
 }
